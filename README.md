@@ -1,4 +1,4 @@
--- feito por SS HUB
+-- feito por CHAGAS HUB
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -33,7 +33,7 @@ title.Size = UDim2.new(1, 0, 0, 40)
 title.Position = UDim2.new(0, 0, 0, 0)
 title.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 title.BorderSizePixel = 0
-title.Text = "🎁 Abrir Bau SS HUB"
+title.Text = "🎁 Abrir Bau CHAGAS HUB"
 title.TextColor3 = Color3.fromRGB(255, 255, 0)
 title.TextSize = 16
 title.Font = Enum.Font.GothamBold
@@ -49,7 +49,7 @@ abrirBauButton.Size = UDim2.new(0, 280, 0, 45)
 abrirBauButton.Position = UDim2.new(0.5, -140, 0, 55)
 abrirBauButton.BackgroundColor3 = Color3.fromRGB(180, 120, 0)
 abrirBauButton.BorderSizePixel = 0
-abrirBauButton.Text = "🎁 Abrir Bau SS HUB"
+abrirBauButton.Text = "🎁 Abrir Bau CHAGAS HUB"
 abrirBauButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 abrirBauButton.TextSize = 16
 abrirBauButton.Font = Enum.Font.GothamBold
@@ -88,5 +88,5 @@ abrirBauButton.MouseButton1Click:Connect(function()
     task.wait(0.5)
     abrirBauButton.Text = "Bau Aberto!"
     task.wait(1)
-    abrirBauButton.Text = "Abrir Bau SS HUB"
+    abrirBauButton.Text = "Abrir Bau CHAGAS HUB"
 end)
