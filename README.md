@@ -43,7 +43,28 @@ local titleCorner = Instance.new("UICorner")
 titleCorner.CornerRadius = UDim.new(0, 10)
 titleCorner.Parent = title
 
--- Botao
+-- BOTÃO FECHAR
+local fecharButton = Instance.new("TextButton")
+fecharButton.Size = UDim2.new(0, 30, 0, 30)
+fecharButton.Position = UDim2.new(1, -35, 0, 5)
+fecharButton.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
+fecharButton.BorderSizePixel = 0
+fecharButton.Text = "X"
+fecharButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+fecharButton.TextSize = 14
+fecharButton.Font = Enum.Font.GothamBold
+fecharButton.Parent = mainFrame
+
+local fecharCorner = Instance.new("UICorner")
+fecharCorner.CornerRadius = UDim.new(0, 6)
+fecharCorner.Parent = fecharButton
+
+-- Função de fechar
+fecharButton.MouseButton1Click:Connect(function()
+    screenGui:Destroy()
+end)
+
+-- Botao principal
 local abrirBauButton = Instance.new("TextButton")
 abrirBauButton.Size = UDim2.new(0, 280, 0, 45)
 abrirBauButton.Position = UDim2.new(0.5, -140, 0, 55)
